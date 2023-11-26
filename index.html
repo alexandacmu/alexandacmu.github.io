@@ -1,412 +1,162 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Analog Photography By Alec</title>
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
 <body>
-<style>
-h1 {text-align: center;}
-h1 {margin: 20px 20px;}
-section {margin: 35px 5%;}
-.gallery {
-    display: grid;
-    grid-auto-columns: minmax(100px, auto);
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: 0px 20px;
-    margin: 0px 0px 12%;
-}
-.gallery__img {
-    width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-figure {
-  width: auto;
-  height: auto;
-  margin: 5px 0px;
-}
-.gallery__item--1 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-.gallery__item--2 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-.gallery__item--3 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
-}
-.gallery__item--4 {
-    grid-column-start: 4;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 2;
-}
-.gallery__item--5 {
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
+  <section id="PageHeader" class="section-padding">
+    <div class="container">
+      <h1>analog photography by alec</h1>
+    </div>
+  </section>
+  <section class="section-padding">
+    <div class="container">
+      <div id="HeaderBody">
+        <p>one time i was in nyc with some friends and one of them pulled out a 35mm camera. <br> she took pictures of us throughout the night and afterwards i forgot about it entirely. <br> a few weeks later those pictures made it back to me - they were washed out, grainy and the date stamp glowed in the corner.</p>
 
-}
-.gallery__item--6 {
-    grid-column-start: 4;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-.gallery__item--7 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 3;
-}
-.gallery__item--8 {
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 3;
-
-}
-.gallery__item--9 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 2;
-    grid-row-end: 4;
-}
-
-.gallery__item--11 {
-    grid-column-start: 4;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 3;
-
-}
-
-.gallery__item--12 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-.gallery__item--13 {
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 1;
-
-}
-.gallery__item--14 {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-
-.gallery__item--15 {
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 2;
-}
-.gallery2 {
-    display: grid;
-    grid-auto-columns: minmax(100px, auto);
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: 20px 20px;
-    margin: 0px 0px 5%;
-}
-figure {
-      width: auto;
-      height: auto;
-      margin: 5px 0px;
-    }
-    .gallery__item--26 {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 3;
-    }
-    .gallery__item--27 {
-        grid-column-start: 3;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 1;
-    
-    }
-    .gallery__item--28 {
-        grid-column-start: 4;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        grid-row-end: 1;
-    }
-    
-    .gallery__item--29 {
-        grid-column-start: 3;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 2;
-    }
-
-    .gallery__item--33 {
-        grid-column-start: 3;
-        grid-column-end: 5;
-        grid-row-start: 3;
-        grid-row-end: 5;
-    }
-    .gallery3 {
-        display: grid;
-        grid-auto-columns: minmax(100px, auto);
-        grid-auto-rows: minmax(100px, auto);
-        grid-gap: 20px 20px;
-        margin: 0px 0px 5%;
-    }
-
-</style>
-
-<h1 style="font-family: courier new">analog photography by alec</h1>
-<p> 
-<div style="text-align: center;">
-  <div style="display: inline-block; text-align: left; font-family: courier new; margin: 0% 4%;">
-    one time i was in nyc with some friends and one of them pulled out a 35mm camera. <br> she took pictures of us throughout the night and afterwards i forgot about it entirely. <br> a few weeks later those pictures made it back to me - they were washed out, grainy and the date stamp glowed in the corner. <br> <br> <i> i immediately fell in love with those photos. </i> <br> <br> these pictures are a product of that spark of inspiration.
-  </div>
-</div>
-</p>
-
-    <section style="font-family: courier new"> <b> pentax iqzoom 60-r || kodak porta 800 </b>
-        
-        <br>on my way back from ny to pgh just in time for halloween
-        <div class="gallery3">
-    
-            <figure class="gallery__item gallery__item--26">
-                <a href ="./assets/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/bordered/AA011.jpg">
-                <img src="./assets/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/comp/AA011.jpg" class="gallery__img" alt="Image 1"></a>
-                moynihan train hall looking fresh
-              </figure>
-    
-            <figure class="gallery__item gallery__item--27">
-                <a href ="./assets/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/bordered/AA009.jpg">
-                <img src="./assets/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/comp/AA009.jpg" class="gallery__img" alt="Image 2"></a>
-                72nd st station
-              </figure>
-    
-            <figure class="gallery__item gallery__item--28">
-                <a href ="./assets/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/bordered/AA003.jpg">
-                <img src="./assets/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/comp/AA003.jpg" class="gallery__img" alt="Image 3"></a>
-                ues has some nice subway lines
-              </figure>
-    
-            <figure class="gallery__item gallery__item--29">
-                <a href ="./assets/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/bordered/AA028.jpg">
-                <img src="./assets/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/comp/AA028.jpg" class="gallery__img" alt="Image 3"></a>
-                this guy was doing some buidling art
-              </figure>
-    
-            <figure class="gallery__item gallery__item--30">
-                <a href ="./assets/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/bordered/AA010.jpg">
-                <img src="./assets/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/comp/AA010.jpg" class="gallery__img" alt="Image 2"></a>
-                some lines are less nice
-              </figure>
-    
-            <figure class="gallery__item gallery__item--31">
-                <a href ="./assets/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/bordered/AA037.jpg">
-                <img src="./assets/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/comp/AA037.jpg" class="gallery__img" alt="Image 3"></a>
-                pgh is known for its bridges
-              </figure>
-    
-            <figure class="gallery__item gallery__item--32">
-                <a href ="./assets/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/bordered/AA025.jpg">
-                <img src="./assets/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/comp/AA025.jpg" class="gallery__img" alt="Image 3"></a>
-                some random bike i saw, its "art"
-              </figure>
-    
-              <figure class="gallery__item gallery__item--33">
-                <a href ="./assets/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/bordered/AA027.jpg">
-                <img src="./assets/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/comp/AA027.jpg" class="gallery__img" alt="Image 3"></a>
-                c r a n e s
-              </figure>
-              <figure class="gallery__item gallery__item--34">
-                <a href ="./assets/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/bordered/AA016.jpg">
-                <img src="./assets/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/comp/AA016.jpg" class="gallery__img" alt="Image 1"></a>
-                redhawk coffee, best cafe in pgh
-              </figure>
-    
-            <figure class="gallery__item gallery__item--35">
-                <a href ="./assets/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/bordered/AA013.jpg">
-                <img src="./assets/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/comp/AA013.jpg" class="gallery__img" alt="Image 2"></a>
-                my labmate noah protecting the leaf village
-              </figure>
-    
-    
-    
-        </div>        
-              
-     
-</section>
-<section style="font-family: courier new"> <b> pentax iqzoom 60-r || lomography color negative 800 </b>
-    
-    <br>i took a trip to nyc for a halloween party & a show my friend performed
-    <div class="gallery2">
-
-        <figure class="gallery__item gallery__item--12">
-            <a href ="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/bordered/AA012A.jpg">
-            <img src="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/comp/AA012A.jpg" class="gallery__img" alt="Image 1"></a>
-            liminal penn station ny
-          </figure>
-
-        <figure class="gallery__item gallery__item--13">
-            <a href ="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/bordered/AA008A.jpg">
-            <img src="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/comp/AA008A.jpg" class="gallery__img" alt="Image 2"></a>
-            philly amtrak station
-          </figure>
-
-        <figure class="gallery__item gallery__item--14">
-            <a href ="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/bordered/AA006A.jpg">
-            <img src="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/comp/AA006A.jpg" class="gallery__img" alt="Image 3"></a>
-            philly amtrak again
-          </figure>
-
-        <figure class="gallery__item gallery__item--15">
-            <a href ="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/bordered/AA005A.jpg">
-            <img src="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/comp/AA005A.jpg" class="gallery__img" alt="Image 3"></a>
-            ...and again, look i was bored ok?
-          </figure>
-
-
-        <figure class="gallery__item gallery__item--17">
-            <a href ="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/bordered/AA007A.jpg">
-            <img src="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/comp/AA007A.jpg" class="gallery__img" alt="Image 2"></a>
-            this guy let me take a silhouette picture of him
-          </figure>
-
-        <figure class="gallery__item gallery__item--18">
-            <a href ="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/bordered/AA014A.jpg">
-            <img src="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/comp/AA014A.jpg" class="gallery__img" alt="Image 3"></a>
-            this is ethan, he hosted the party
-          </figure>
-
-        <figure class="gallery__item gallery__item--19">
-            <a href ="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/bordered/AA013A.jpg">
-            <img src="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/comp/AA013A.jpg" class="gallery__img" alt="Image 3"></a>
-            brooklyn from the subway window
-          </figure>
-
-          <figure class="gallery__item gallery__item--20">
-            <a href ="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/bordered/AA010A.jpg">
-            <img src="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/comp/AA010A.jpg" class="gallery__img" alt="Image 3"></a>
-            the crowded times square subway
-          </figure>
-          <figure class="gallery__item gallery__item--21">
-            <a href ="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/bordered/AA023A.jpg">
-            <img src="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/comp/AA023A.jpg" class="gallery__img" alt="Image 1"></a>
-            double exposure of luke performing
-          </figure>
-
-        <figure class="gallery__item gallery__item--22">
-            <a href ="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/bordered/AA025A.jpg">
-            <img src="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/comp/AA025A.jpg" class="gallery__img" alt="Image 2"></a>
-            and another
-          </figure>
-
-        <figure class="gallery__item gallery__item--23">
-            <a href ="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/bordered/AA030A.jpg">
-            <img src="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/comp/AA030A.jpg" class="gallery__img" alt="Image 3"></a>
-            other bands performed too
-          </figure>
-
-        <figure class="gallery__item gallery__item--24">
-            <a href ="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/bordered/AA033A.jpg">
-            <img src="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/comp/AA033A.jpg" class="gallery__img" alt="Image 3"></a>
-            different band, but i really like this picture
-          </figure>
-
-          <figure class="gallery__item gallery__item--25">
-            <a href ="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/bordered/AA034A.jpg">
-            <img src="./assets/Pentax_IQZoom60-R/Lomography_ISO800_NYC_10-28-23/Batch2-11_10_23/9475/comp/AA034A.jpg" class="gallery__img" alt="Image 3"></a>
-            the oh so nessesary bathroom mirror picture
-          </figure>
-
-
-    </div>       
-    
-       
+          <p class="italic">i immediately fell in love with those photos.</p>
           
-</section>
+          <p>these pictures are a product of that spark of inspiration.</p>
+      </div>
+    </div>
+  </section>
 
-<section style="font-family: courier new"> <b> pentax iqzoom 60-r || dubblefilm treat 400 (25) </b> <br> my first foray 
-  <div class="gallery">
-
-      <figure class="gallery__item gallery__item--1">
-          <a href = "./assets/Pentax_IQZoom60-R/Dubblefilm_Treat_10-21-23/Batch1-11_3_23/9418/bordered/AA004.jpg">
-          <img src="./assets/Pentax_IQZoom60-R/Dubblefilm_Treat_10-21-23/Batch1-11_3_23/9418/comp/AA004.jpg" class="gallery__img" alt="Image 1"></a>
-          self portait - elevator mirror (2023)
+  <section class="gallery section-padding">
+    <div class="container">
+      <h2>pentax iqzoom 60-r || kodak porta 800</h2>
+      <p>on my way back from ny to pgh just in time for halloween</p>
+      <div class="gallery-grid">
+        <figure class="gallery-item gallery-item-large">
+          <a href ="./assets/images/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/bordered/AA011.jpg" target="_blank">
+            <img src="./assets/images/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/comp/AA011.jpg" class="gallery__img" alt="Image 1"></a>
+          <figcaption>moynihan train hall looking fresh</figcaption>
         </figure>
-
-      <figure class="gallery__item gallery__item--2">
-          <a href ="./assets/Pentax_IQZoom60-R/Dubblefilm_Treat_10-21-23/Batch1-11_3_23/9418/bordered/AA013.jpg">
-          <img src="./assets/Pentax_IQZoom60-R/Dubblefilm_Treat_10-21-23/Batch1-11_3_23/9418/comp/AA013.jpg" class="gallery__img" alt="Image 2"></a>
-          southside, pgh
+        <figure class="gallery-item">
+          <a href ="./assets/images/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/bordered/AA011.jpg" target="_blank">
+            <img src="./assets/images/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/comp/AA011.jpg" class="gallery__img" alt="Image 1"></a>
+          <figcaption>moynihan train hall looking fresh</figcaption>
         </figure>
-
-      <figure class="gallery__item gallery__item--3">
-          <a href ="./assets/Pentax_IQZoom60-R/Dubblefilm_Treat_10-21-23/Batch1-11_3_23/9418/bordered/AA020.jpg">
-          <img src="./assets/Pentax_IQZoom60-R/Dubblefilm_Treat_10-21-23/Batch1-11_3_23/9418/comp/AA020.jpg" class="gallery__img" alt="Image 3"></a>
-          cathedral of learning, pitt
+        <figure class="gallery-item">
+          <a href ="./assets/images/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/bordered/AA011.jpg" target="_blank">
+            <img src="./assets/images/Pentax_IQZoom60-R/Kodak_porta_800_11-13-23/comp/AA011.jpg" class="gallery__img" alt="Image 1"></a>
+          <figcaption>moynihan train hall looking fresh</figcaption>
         </figure>
-
-      <figure class="gallery__item gallery__item--4">
-          <a href ="./assets/Pentax_IQZoom60-R/Dubblefilm_Treat_10-21-23/Batch1-11_3_23/9418/bordered/AA015.jpg">
-          <img src="./assets/Pentax_IQZoom60-R/Dubblefilm_Treat_10-21-23/Batch1-11_3_23/9418/comp/AA015.jpg" class="gallery__img" alt="Image 3"></a>
-          camera repair shop
+        <figure class="gallery-item">
+          
         </figure>
-
-      <figure class="gallery__item gallery__item--5">
-          <a href ="./assets/Pentax_IQZoom60-R/Dubblefilm_Treat_10-21-23/Batch1-11_3_23/9418/bordered/AA007.jpg">
-          <img src="./assets/Pentax_IQZoom60-R/Dubblefilm_Treat_10-21-23/Batch1-11_3_23/9418/comp/AA007.jpg" class="gallery__img" alt="Image 3"></a>
-          market square
+        <figure class="gallery-item">
+          
         </figure>
-
-        <figure class="gallery__item gallery__item--6">
-          <a href ="./assets/Pentax_IQZoom60-R/Dubblefilm_Treat_10-21-23/Batch1-11_3_23/9418/bordered/AA001.jpg">
-          <img src="./assets/Pentax_IQZoom60-R/Dubblefilm_Treat_10-21-23/Batch1-11_3_23/9418/comp/AA001.jpg" class="gallery__img" alt="Image 3"></a>
-          bankrupt bodega, where i got the camera
+        <figure class="gallery-item">
+          
         </figure>
-
-        <figure class="gallery__item gallery__item--7">
-          <a href ="./assets/Pentax_IQZoom60-R/Dubblefilm_Treat_10-21-23/Batch1-11_3_23/9418/bordered/AA002.jpg">
-          <img src="./assets/Pentax_IQZoom60-R/Dubblefilm_Treat_10-21-23/Batch1-11_3_23/9418/comp/AA002.jpg" class="gallery__img" alt="Image 3"></a>
-          phil owns my favorite clothing store - vestis
+        <figure class="gallery-item">
+          
         </figure>
+        <figure class="gallery-item gallery-item-large">
 
-        <figure class="gallery__item gallery__item--8">
-          <a href ="./assets/Pentax_IQZoom60-R/Dubblefilm_Treat_10-21-23/Batch1-11_3_23/9418/bordered/AA014.jpg">
-          <img src="./assets/Pentax_IQZoom60-R/Dubblefilm_Treat_10-21-23/Batch1-11_3_23/9418/comp/AA014.jpg" class="gallery__img" alt="Image 3"></a>
-          market square but <i>aesthetic</i>
         </figure>
-
-        <figure class="gallery__item gallery__item--9">
-          <a href ="./assets/Pentax_IQZoom60-R/Dubblefilm_Treat_10-21-23/Batch1-11_3_23/9418/bordered/AA021.jpg">
-          <img src="./assets/Pentax_IQZoom60-R/Dubblefilm_Treat_10-21-23/Batch1-11_3_23/9418/comp/AA021.jpg" class="gallery__img" alt="Image 3"></a>
-          cathedral again, its like the mt. fuji of pgh - always looming
+        <figure class="gallery-item">
+          
         </figure>
-
-
-        <figure class="gallery__item gallery__item--11">
-          <a href ="./assets/Pentax_IQZoom60-R/Dubblefilm_Treat_10-21-23/Batch1-11_3_23/9418/bordered/AA006.jpg">
-          <img src="./assets/Pentax_IQZoom60-R/Dubblefilm_Treat_10-21-23/Batch1-11_3_23/9418/comp/AA006.jpg" class="gallery__img" alt="Image 3"></a>
-          5th ave, where i live
+        <figure class="gallery-item">
+          
         </figure>
-        
-        
-        
-  </div>        
-        
-</section>
+      </div>
+    </div>
+  </section>
+  
+  <section class="gallery section-padding">
+    <div class="container">
+      <h2>pentax iqzoom 60-r || lomography color negative 800</h2>
+      <p>i took a trip to nyc for a halloween party & a show my friend performed</p>
+      <div class="gallery-grid">
+        <figure class="gallery-item gallery-item-large">
 
+        </figure>
+        <figure class="gallery-item">
+
+        </figure>
+        <figure class="gallery-item">
+
+        </figure>
+        <figure class="gallery-item">
+          
+        </figure>
+        <figure class="gallery-item">
+          
+        </figure>
+        <figure class="gallery-item">
+          
+        </figure>
+        <figure class="gallery-item">
+          
+        </figure>
+        <figure class="gallery-item">
+
+        </figure>
+        <figure class="gallery-item">
+          
+        </figure>
+        <figure class="gallery-item">
+          
+        </figure>
+        <figure class="gallery-item">
+
+        </figure>
+        <figure class="gallery-item">
+
+        </figure>
+        <figure class="gallery-item">
+
+        </figure>
+      </div>
+    </div>
+  </section>
+  <section class="gallery section-padding">
+    <div class="container">
+      <h2>pentax iqzoom 60-r || dubblefilm treat 400 (25)</h2>
+      <p>my first foray</p>
+      <div class="gallery-grid">
+
+        <figure class="gallery-item">
+          
+        </figure>
+        <figure class="gallery-item">
+          
+        </figure>
+        <figure class="gallery-item gallery-item-vert">
+          
+        </figure>
+        <figure class="gallery-item">
+          
+        </figure>
+        <figure class="gallery-item gallery-item-vert">
+
+        </figure>
+        <figure class="gallery-item">
+          
+        </figure>
+        <figure class="gallery-item">
+          
+        </figure>
+        <figure class="gallery-item">
+
+        </figure>
+        <figure class="gallery-item">
+
+        </figure>
+        <figure class="gallery-item">
+
+        </figure>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
 
