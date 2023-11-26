@@ -1,0 +1,49 @@
+{
+    "title":"pentax iqzoom 60-r || kodak porta 800",
+    "desc":"on my way back from ny to pgh just in time for halloween",
+    "asset-slug":"pentax_iqzoom/kodak_porta_800",
+    "images":[
+        {
+            "filename":"AA011.jpg",
+            "blurb": "moynihan train hall looking fresh",
+            "shape-class":"gallery-item-large"
+        },
+        {
+            "filename":"AA009.jpg",
+            "blurb": "72nd st station"
+        },
+        {
+            "filename":"AA003.jpg",
+            "blurb": "ues has some nice subway lines"
+        },
+        {
+            "filename":"AA028.jpg",
+            "blurb": "this guy was doing some buidling art"
+        },
+        {
+            "filename":"AA010.jpg",
+            "blurb": "some lines are less nice"
+        },
+        {
+            "filename":"AA037.jpg",
+            "blurb": "pgh is known for its bridges"
+        },
+        {
+            "filename":"AA025.jpg",
+            "blurb": "some random bike i saw, its \"art\""
+        },
+        {
+            "filename":"AA027.jpg",
+            "blurb": "c r a n e s",
+            "shape-class":"gallery-item-large"
+        },
+        {
+            "filename":"AA016.jpg",
+            "blurb": "redhawk coffee, best cafe in pgh"
+        },
+        {
+            "filename":"AA013.jpg",
+            "blurb": "my labmate noah protecting the leaf village"
+        }
+    ]
+}

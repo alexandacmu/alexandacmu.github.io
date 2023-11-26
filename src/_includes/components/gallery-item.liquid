@@ -1,0 +1,7 @@
+{% assign thumburl = "/assets/images/" | append: gallery.asset-slug | append: "/comp/" | append: item.filename %}
+{% assign borderurl = "/assets/images/" | append: gallery.asset-slug | append: "/bordered/" | append: item.filename %}
+<figure class="gallery-item {% if item.shape-class %} {{item.shape-class}} {% endif %}">
+    <a href="{{borderurl | url}}" target="_blank">
+    <img src="{{thumburl | url}}" class="gallery__img" alt="Image 1"></a>
+    <figcaption>{{item.blurb}}</figcaption>
+  </figure>

@@ -1,0 +1,11 @@
+<section class="gallery section-padding">
+    <div class="container">
+      <h2>{{gallery.title}}</h2>
+      <p>{{gallery.desc}}</p>
+      <div class="gallery-grid">
+        {% for item in gallery.images %}
+            {% include 'components/gallery-item', gallery:gallery item:item %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>

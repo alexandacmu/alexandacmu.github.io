@@ -1,3 +1,7 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 body{
     font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
@@ -15,9 +19,6 @@ h2{
     margin:0 auto;
 }
 
-.text-center{
-    text-align: center;
-}
 
 .section-padding{
     padding: 40px 60px;
