@@ -34,6 +34,7 @@ h2{
     display: grid;
     width:100%;
     grid-template-columns: .25fr .25fr .25fr .25fr;
+
     gap:var(--grid-gap);
     grid-auto-rows: var(--grid-item-height);
     grid-auto-flow: dense;
